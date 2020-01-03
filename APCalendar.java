@@ -60,8 +60,16 @@ public class APCalendar {
 //     * Precondition: the date represented by month, day, year is a valid date
 //     */
 //    public static int dayOfWeek(int month, int day, int year) {
-//       // to be implemented by you in part B
-//    }
+         int firstDayOfYear = firstDayOfYear(year)
+         int dayOfYear = dayOfYrar(month, day, year)
+          int remainder = (dayOfYear-firstDayOfYear)%7;
+          int finalDay;
+          if (firstDayOfYear+remainder > 6) {
+            for (int i = 0; i < remainder; i++){
+            firstDayOfYear++
+            if (firstDayOfYear +1>6) {
+              firstDayOfYear = 0;
+            } finalDay = firstDayOfYear;
 //
 //    // there may be instance variables, constructors, and other methods not shown
 // }
